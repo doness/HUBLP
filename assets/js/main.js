@@ -160,7 +160,7 @@ async function loadComponents() {
         const headerContainer = document.getElementById('header-container');
         if (headerContainer) {
             try {
-                const headerRes = await fetch('components/header.html');
+                const headerRes = await fetch('components/header.html?v=' + new Date().getTime());
                 if (!headerRes.ok) throw new Error('Fetch failed');
                 headerContainer.innerHTML = await headerRes.text();
             } catch (fetchErr) {
@@ -172,7 +172,7 @@ async function loadComponents() {
         const footerContainer = document.getElementById('footer-container');
         if (footerContainer) {
             try {
-                const footerRes = await fetch('components/footer.html');
+                const footerRes = await fetch('components/footer.html?v=' + new Date().getTime());
                 if (!footerRes.ok) throw new Error('Fetch failed');
                 footerContainer.innerHTML = await footerRes.text();
             } catch (fetchErr) {

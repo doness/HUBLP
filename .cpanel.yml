@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/rsiwutea/hub.aika.agency
+    - /bin/cp -R * $DEPLOYPATH
