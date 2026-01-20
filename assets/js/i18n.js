@@ -127,6 +127,7 @@ const DEFAULT_TRANSLATIONS = {
     "module-performance": "Performance Review (KPI, 1-on-1)",
     "module-career": "Career Site (Job Portal)",
     "core-badge": "Core Platform",
+    "addon-badge": "Add-on",
     "core-tooltip": "Required foundation for your workspace",
     "storage-none": "No additional storage",
     "storage-100": "+100 GB (Rp 75.000)",

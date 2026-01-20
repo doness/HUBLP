@@ -145,6 +145,7 @@ window.LOCALE_ZH_CN = {
     "module-performance": "绩效评估 (KPI, 1-on-1)",
     "module-career": "招聘门户 (Job Portal)",
     "core-badge": "核心平台",
+    "addon-badge": "附加组件",
     "core-tooltip": "您的工作区必备基础",
     "storage-none": "无额外存储",
     "storage-100": "+100 GB (Rp 75.000)",

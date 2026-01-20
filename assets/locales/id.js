@@ -145,6 +145,7 @@ window.LOCALE_ID = {
     "module-performance": "Review Kinerja (KPI, 1-on-1)",
     "module-career": "Situs Karir (Job Portal)",
     "core-badge": "Platform Inti",
+    "addon-badge": "Tambahan",
     "core-tooltip": "Pondasi wajib untuk workspace Anda",
     "storage-none": "Tidak ada penyimpanan tambahan",
     "storage-100": "+100 GB (Rp 75.000)",

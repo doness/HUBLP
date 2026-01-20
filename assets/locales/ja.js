@@ -145,6 +145,7 @@ window.LOCALE_JA = {
     "module-performance": "人事評価（KPI、1on1）",
     "module-career": "採用サイト（求人ポータル）",
     "core-badge": "コアプラットフォーム",
+    "addon-badge": "アドオン",
     "core-tooltip": "ワークスペースに必要な基盤",
     "storage-none": "追加ストレージなし",
     "storage-100": "+100 GB（Rp 75,000）",
