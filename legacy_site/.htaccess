@@ -1,0 +1,25 @@
+# Aika Nexus Hub - URL Rewrite Rules
+# Enable mod_rewrite
+RewriteEngine On
+
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirect /privacy to privacy.html
+RewriteRule ^privacy/?$ privacy.html [NC,L]
+
+# Redirect /terms to terms.html
+RewriteRule ^terms/?$ terms.html [NC,L]
+
+# Force HTTPS (optional - uncomment if you want to enforce HTTPS)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Prevent directory browsing
+Options -Indexes
+
+# Custom error pages (optional)
+# ErrorDocument 404 /404.html
+# ErrorDocument 500 /500.html

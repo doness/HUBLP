@@ -1,0 +1,706 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Aika Nexus | Workflow Operating System">
+    <!-- HERO -->
+    <section class="hero hero-modern">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1 data-i18n="hero-title">Run your work in one place</h1>
+                <p data-i18n="hero-subtitle">
+                    Aika Nexus is a modular work management platform for teams, startups, and enterprises.
+                    Start free. Scale with CRM, payroll, or fully custom controls.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://nexus.aika.agency/signup" class="btn btn-primary" data-i18n="hero-cta-primary"
+                        rel="noopener">Start Free Trial</a>
+                    <a href="#pricing" class="btn btn-secondary" data-i18n="hero-cta-secondary"
+                        onclick="event.preventDefault(); window.smoothScroll('#pricing', 1500);">View Pricing</a>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span data-i18n="trust-1">No credit card required</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span data-i18n="trust-2">14-day free trial</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="hero-visual">
+                <div class="glow-effect"></div>
+                <img src="https://ik.imagekit.io/qrnjdv9jd/Aika/hub/5.jpeg" alt="Aika Nexus Dashboard Preview"
+                    class="dashboard-img clickable" onclick="openLightbox(this.src)" style="cursor: pointer;"
+                    onerror="this.src='https://placehold.co/800x500/1e1e2e/FFF?text=Dashboard+Preview'">
+
+                <!-- Social Proof (Under Image) -->
+                <div class="hero-social-proof-compact">
+                    <p data-i18n="hero-trusted">Trusted by innovative teams</p>
+                    <div class="logo-strip-compact">
+                        <i class="fab fa-aws" title="AWS"></i>
+                        <i class="fab fa-google" title="Google"></i>
+                        <i class="fab fa-microsoft" title="Microsoft"></i>
+                        <i class="fab fa-spotify" title="Spotify"></i>
+                        <i class="fab fa-stripe" title="Stripe"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Arrow -->
+        <div class="scroll-down" onclick="window.smoothScroll('#content-start', 1000)">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div id="content-start" class="container" style="padding-top: 120px;">
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label" data-i18n="stat-1">Companies Trust Us</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50K+</div>
+                <div class="stat-label" data-i18n="stat-2">Active Users</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label" data-i18n="stat-3">Uptime</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4.9/5</div>
+                <div class="stat-label" data-i18n="stat-4">User Rating</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section id="features" class="container">
+        <h2 data-i18n="features-title">Everything teams need to operate</h2>
+        <p class="subtitle" data-i18n="features-subtitle">
+            Projects, HR, finance, and optional sales tools without the tool sprawl.
+        </p>
+
+        <div class="grid">
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-list-check"></i></div>
+                <h3 data-i18n="feature-1-title">Projects & Tasks</h3>
+                <p data-i18n="feature-1-desc">Plan work, track progress, and assign ownership with intuitive boards
+                    and
+                    timelines.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-users"></i></div>
+                <h3 data-i18n="feature-2-title">HR & Attendance</h3>
+                <p data-i18n="feature-2-desc">Employees, roles, leave management, and time tracking all in one
+                    place.
+                </p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <h3 data-i18n="feature-3-title">Finance</h3>
+                <p data-i18n="feature-3-desc">Invoices, payments, expenses, and contracts with full reporting.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h3 data-i18n="feature-4-title">CRM (Add-on)</h3>
+                <p data-i18n="feature-4-desc">Leads, clients, and sales pipelines when you need them.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3 data-i18n="feature-5-title">Analytics</h3>
+                <p data-i18n="feature-5-desc">Real-time insights and custom reports to drive better decisions.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3 data-i18n="feature-6-title">Security</h3>
+                <p data-i18n="feature-6-desc">Enterprise-grade security with role-based access control.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM FEATURE SHOWCASE -->
+    <section class="productivity-showcase">
+        <div class="container">
+            <!-- Header -->
+            <div class="showcase-header">
+                <span class="section-label">AIKA NEXUS HUB</span>
+                <h2 class="powerhouse-title" data-i18n="powerhouse-title">Your productivity powerhouse</h2>
+                <p class="showcase-intro" data-i18n="powerhouse-intro">
+                    Stay organized and efficient with Projects, HR, and Analytics. Every task, employee, or metric
+                    finds its place, keeping you at the top of your game.
+                </p>
+            </div>
+
+            <!-- Main Showcase Layout -->
+            <div class="showcase-layout">
+                <!-- Left: Feature Cards -->
+                <div class="feature-cards">
+                    <div class="feature-card active" data-feature="projects" onclick="switchFeature('projects')">
+                        <div class="feature-card-accent"></div>
+                        <h3 data-i18n="powerhouse-card1-title">Projects & Tasks</h3>
+                        <p data-i18n="powerhouse-card1-desc">When it's on your mind, it goes in your board. Capture
+                            your to-dos from anywhere, anytime.</p>
+                    </div>
+
+                    <div class="feature-card" data-feature="hr" onclick="switchFeature('hr')">
+                        <div class="feature-card-accent"></div>
+                        <h3 data-i18n="powerhouse-card2-title">HR & Attendance</h3>
+                        <p data-i18n="powerhouse-card2-desc">Your employee list may be long, but it can be
+                            manageable! Keep tabs on everything from "onboarding" to "performance reviews".</p>
+                    </div>
+
+                    <div class="feature-card" data-feature="analytics" onclick="switchFeature('analytics')">
+                        <div class="feature-card-accent"></div>
+                        <h3 data-i18n="powerhouse-card3-title">Analytics Dashboard</h3>
+                        <p data-i18n="powerhouse-card3-desc">Drag, drop, get it done. Snap your top metrics into
+                            your dashboard and make time for what truly matters.</p>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Mockup -->
+                <div class="feature-visual-container">
+                    <div class="feature-visual">
+                        <img id="showcase-visual" src="https://ik.imagekit.io/qrnjdv9jd/Aika/hub/1.jpeg"
+                            alt="Projects & Tasks feature preview" onclick="openLightbox(this.src)"
+                            style="transition: opacity 0.3s ease; max-width: 100%; height: auto; object-fit: contain; cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="container">
+        <h2 data-i18n="testimonial-title">What our customers say</h2>
+        <p class="subtitle" data-i18n="testimonial-subtitle">Trusted by growing businesses across Indonesia</p>
+
+        <div class="testimonial-section-container">
+            <div class="carousel-viewport">
+                <div id="testimonialTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-1-text">
+                            "Aika has streamlined our project management completely. We went from multiple tools to
+                            just
+                            one platform. The team collaboration features are fantastic!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">B</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-1-name">Budi Santoso</h4>
+                                <p data-i18n="testimonial-1-role">Operations Manager, Karya Digital</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-2-text">
+                            "The HR module saved us countless hours. Simple to use, and perfect for our field teams.
+                            Highly recommended!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">S</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-2-name">Siti Rahma</h4>
+                                <p data-i18n="testimonial-2-role">HR Director, Maju Logistics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-3-text">
+                            "Finally, a solution that understands Indonesian business needs. Invoice features work
+                            perfectly with our accounting!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">A</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-3-name">Andi Wijaya</h4>
+                                <p data-i18n="testimonial-3-role">CEO, Nusantara Ventures</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-4-text">
+                            "The custom reporting saved our accounting team so much time. Integration with existing
+                            tools was seamless. Great investment!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">D</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-4-name">Dewi Lestari</h4>
+                                <p data-i18n="testimonial-4-role">Finance Manager, Cemerlang Corp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-5-text">
+                            "Customer support is outstanding. They helped us migrate from our old system smoothly.
+                            The training materials are excellent too!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">R</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-5-name">Rudi Hartono</h4>
+                                <p data-i18n="testimonial-5-role">IT Director, Berkah Tech</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-6-text">
+                            "Best decision for our startup. Affordable pricing with enterprise features. The mobile
+                            app keeps our remote team connected!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">L</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-6-name">Linda Kusuma</h4>
+                                <p data-i18n="testimonial-6-role">Founder, Inovasi Digital</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 7 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-7-text">
+                            "Implementation was quick and painless. The team was up and running within days. Data
+                            import from our old system was flawless!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">F</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-7-name">Fajar Rahman</h4>
+                                <p data-i18n="testimonial-7-role">COO, Pesona Jaya</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 8 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-8-text">
+                            "The payroll module handles all Indonesian tax calculations perfectly. Saves us from
+                            expensive accounting software. Worth every rupiah!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">M</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-8-name">Maya Sari</h4>
+                                <p data-i18n="testimonial-8-role">CFO, Sentosa Group</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 9 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-9-text">
+                            "We've tried other platforms, but Aika is the only one that truly fits the local
+                            workflow. The asset tracking is a lifesaver."
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">E</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-9-name">Eko Prasetyo</h4>
+                                <p data-i18n="testimonial-9-role">Logistics Manager, TransIndo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 10 -->
+                    <div class="testimonial-card testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="testimonial-10-text">
+                            "The analytics dashboard gives me the exact overview I need every morning. Decision
+                            making has never been faster."
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">D</div>
+                            <div class="testimonial-info">
+                                <h4 data-i18n="testimonial-10-name">Diana Putri</h4>
+                                <p data-i18n="testimonial-10-role">Director, Global Niaga</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carouselDots" style="display: flex; justify-content: center; gap: 8px; margin-top: 24px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="container">
+        <h2 data-i18n="pricing-title">Pricing</h2>
+        <p class="subtitle" data-i18n="pricing-subtitle">Start free. Upgrade only when you need more.</p>
+
+        <div class="billing-toggle">
+            <button id="monthlyBtn" class="active" onclick="toggleBilling('monthly')"
+                data-i18n="billing-monthly">Monthly</button>
+            <button id="yearlyBtn" onclick="toggleBilling('yearly')" data-i18n="billing-yearly">Yearly (Save
+                20%)</button>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="plan">
+                <h3 data-i18n="plan-free-name">Free</h3>
+                <p class="price">Rp 0</p>
+                <ul>
+                    <li data-i18n="plan-free-1">Up to 5 employees</li>
+                    <li data-i18n="plan-free-2">Projects & HR basic</li>
+                    <li data-i18n="plan-free-3">5GB storage</li>
+                    <li data-i18n="plan-free-4">Community support</li>
+                </ul>
+                <a href="https://nexus.aika.agency/signup" class="btn btn-secondary"
+                    style="width: 100%; margin-top: 16px;" data-i18n="plan-cta">Get Started</a>
+            </div>
+
+            <div class="plan">
+                <h3 data-i18n="plan-essential-name">Essential</h3>
+                <p class="price" id="essentialPrice">Rp 849.000 <span style="font-size: 16px; color: var(--muted);">/
+                        <span data-i18n="per-month">month</span></span></p>
+                <ul>
+                    <li data-i18n="plan-essential-1">Up to 50 employees</li>
+                    <li data-i18n="plan-essential-2">50 GB storage</li>
+                    <li data-i18n="plan-essential-3">Email support</li>
+                    <li data-i18n="plan-essential-4">Advanced reporting</li>
+                </ul>
+                <a href="https://nexus.aika.agency/signup" class="btn btn-primary"
+                    style="width: 100%; margin-top: 16px;" data-i18n="plan-cta">Get Started</a>
+            </div>
+
+            <div class="plan recommended">
+                <span class="badge" data-i18n="badge-popular">Most Popular</span>
+                <h3 data-i18n="plan-business-name">Business</h3>
+                <p class="price" id="businessPrice">Rp 1.749.000 <span style="font-size: 16px; color: var(--muted);">/
+                        <span data-i18n="per-month">month</span></span></p>
+                <ul>
+                    <li data-i18n="plan-business-1">Up to 100 employees</li>
+                    <li data-i18n="plan-business-2">200 GB storage</li>
+                    <li data-i18n="plan-business-3">Priority support</li>
+                    <li data-i18n="plan-business-4">Custom integrations</li>
+                    <li data-i18n="plan-business-5">API access</li>
+                </ul>
+                <a href="https://nexus.aika.agency/signup" class="btn btn-primary"
+                    style="width: 100%; margin-top: 16px;" data-i18n="plan-cta">Get Started</a>
+            </div>
+
+            <div class="plan">
+                <h3 data-i18n="plan-custom-name">Enterprise</h3>
+                <p class="price" data-i18n="plan-custom-price">Custom</p>
+                <ul>
+                    <li data-i18n="plan-custom-1">Unlimited employees</li>
+                    <li data-i18n="plan-custom-2">Unlimited storage</li>
+                    <li data-i18n="plan-custom-3">Dedicated support</li>
+                    <li data-i18n="plan-custom-4">Custom features</li>
+                    <li data-i18n="plan-custom-5">SLA guarantee</li>
+                </ul>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: 16px;" onclick="scrollToCalculator()"
+                    data-i18n="plan-contact">Contact Sales</button>
+            </div>
+        </div>
+
+        <!-- CUSTOM PLAN CALCULATOR -->
+        <div class="calculator">
+            <h2 data-i18n="calc-title">Custom Plan Calculator</h2>
+            <p class="subtitle">
+                <span data-i18n="calc-subtitle">Estimate your custom plan cost.</span>
+                <span class="tooltip">
+                    <span data-i18n="calc-minimum">minimum applies*</span>
+                    <span class="tooltip-text" data-i18n="calc-tooltip">Custom plans have a minimum monthly
+                        commitment
+                        of Rp 1.500.000.</span>
+                </span>
+            </p>
+
+            <div class="calc-grid">
+                <div>
+                    <div class="form-group">
+                        <label data-i18n="calc-company">Company name</label>
+                        <input type="text" id="calcCompany" placeholder="Your Company" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="form-name">Your name</label>
+                        <input type="text" id="calcName" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="calc-email">Email address</label>
+                        <input type="email" id="calcEmail" placeholder="your@company.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="calc-phone">Phone number</label>
+                        <input type="tel" id="calcPhone" placeholder="+62 812 3456 7890" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="calc-employees">Number of employees</label>
+                        <input type="number" id="calcEmp" value="10" min="5" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="calc-billing">Billing cycle</label>
+                        <select id="calcBilling">
+                            <option value="monthly" data-i18n="billing-monthly">Monthly</option>
+                            <option value="yearly" data-i18n="billing-yearly">Yearly (Save 20%)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="form-group">
+                        <label data-i18n="calc-modules">Select modules</label>
+                        <div class="module active locked" data-mod="project" onclick="toggleModule(this)"
+                            title="Core Foundation">
+                            <div class="module-check">
+                                <i class="fa-solid fa-shield-halved"></i> <span data-i18n="core-badge">Core
+                                    Platform</span>
+                            </div>
+                            <div class="module-header" data-i18n="module-project">Project & Tasks</div>
+                            <div class="module-price">
+                                <span class="original-price">Rp 15.000</span>
+                                Rp 7.500 / employee
+                            </div>
+                        </div>
+                        <div class="module active locked" data-mod="hr" onclick="toggleModule(this)"
+                            title="Core Foundation">
+                            <div class="module-check">
+                                <i class="fa-solid fa-shield-halved"></i> <span data-i18n="core-badge">Core
+                                    Platform</span>
+                            </div>
+                            <div class="module-header" data-i18n="module-hr">HR & Attendance</div>
+                            <div class="module-price">
+                                <span class="original-price">Rp 15.000</span>
+                                Rp 7.500 / employee
+                            </div>
+                        </div>
+                        <div class="module" data-mod="crm" onclick="toggleModule(this)">
+                            <div class="module-header" data-i18n="module-crm">CRM</div>
+                            <div class="module-price">Rp 300.000</div>
+                        </div>
+                        <div class="module" data-mod="payroll" onclick="toggleModule(this)">
+                            <div class="module-header" data-i18n="module-payroll">Payroll</div>
+                            <div class="module-price">Rp 500.000</div>
+                        </div>
+                        <div class="module" data-mod="assets" onclick="toggleModule(this)">
+                            <div class="module-header" data-i18n="module-assets">Asset Tracking</div>
+                            <div class="module-price">Rp 250.000</div>
+                        </div>
+                        <div class="module" data-mod="performance" onclick="toggleModule(this)">
+                            <div class="module-header" data-i18n="module-performance">Performance Review</div>
+                            <div class="module-price">Rp 250.000</div>
+                        </div>
+                        <div class="module" data-mod="career" onclick="toggleModule(this)">
+                            <div class="module-header" data-i18n="module-career">Career Site</div>
+                            <div class="module-price">Rp 250.000</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="calc-storage">Additional Storage</label>
+                        <select id="calcStorage" onchange="calculateCost()">
+                            <option value="0" data-i18n="storage-none">No additional storage</option>
+                            <option value="100" data-i18n="storage-100">+100 GB (Rp 75.000)</option>
+                            <option value="500" data-i18n="storage-500">+500 GB (Rp 300.000)</option>
+                            <option value="1000" data-i18n="storage-1000">+1 TB (Rp 500.000)</option>
+                            <option value="5000" data-i18n="storage-5000">+5 TB (Rp 2.000.000)</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 24px;" onclick="calculateCost()"
+                        data-i18n="calc-button">
+                        Calculate & Request Quote
+                    </button>
+                    <div class="result" id="calcResult"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REASONS SECTION -->
+    <section class="reasons-section">
+        <div class="reasons-container">
+            <div class="reasons-left">
+                <h2 data-i18n="reason-title">Reason to Choose US</h2>
+            </div>
+            <div class="reasons-right">
+                <div class="reasons-list">
+                    <div class="reason-item active" data-i18n="reason-1">Innovation at its Core</div>
+                    <div class="reason-item" data-i18n="reason-2">Proven Expertise</div>
+                    <div class="reason-item" data-i18n="reason-3">Customizable Solutions</div>
+                    <div class="reason-item" data-i18n="reason-4">Seamless Integration</div>
+                    <div class="reason-item" data-i18n="reason-5">Exceptional Support</div>
+                    <div class="reason-item" data-i18n="reason-6">Data Security</div>
+                    <div class="reason-item" data-i18n="reason-7">Scalable Infrastructure</div>
+                    <div class="reason-item" data-i18n="reason-8">User-Centric Design</div>
+                    <div class="reason-item" data-i18n="reason-9">Real-time Analytics</div>
+                    <div class="reason-item" data-i18n="reason-10">Community Driven</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container">
+        <h2 data-i18n="faq-title">Frequently Asked Questions</h2>
+        <p class="subtitle" data-i18n="faq-subtitle">Everything you need to know about Aika</p>
+
+        <div style="max-width: 800px; margin: 48px auto;">
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-1-q">How does the free trial work?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-1-a">
+                    You get 14 days of full access to all features. No credit card required. You can cancel anytime
+                    during the trial period.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-2-q">Can I change plans later?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-2-a">
+                    Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-3-q">What payment methods do you accept?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-3-a">
+                    We accept bank transfers, credit cards, and Indonesian payment methods. Enterprise plans can be
+                    invoiced.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-4-q">Is my data secure?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-4-a">
+                    Absolutely. We use enterprise-grade encryption, regular backups, and comply with international
+                    security standards.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-5-q">Do you offer training and support?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-5-a">
+                    Yes! We provide comprehensive documentation, video tutorials, and dedicated support based on your
+                    plan.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-6-q">Where is my data hosted?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-6-a">
+                    Our servers are located in Indonesia, fully compliant with local data privacy regulations (PDP
+                    Law).
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-7-q">Do you support integrations?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-7-a">
+                    Yes, Business and Enterprise plans include API access. Pre-built integrations with major
+                    accounting software are coming soon.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-8-q">Is there a mobile app?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-8-a">
+                    Yes! The Aika Nexus mobile app is available for iOS and Android, keeping your team connected
+                    anywhere.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-9-q">Can I customize the platform with my branding?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-9-a">
+                    Enterprise plans allow for white-labeling, including custom domains, logos, and color schemes.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span data-i18n="faq-10-q">What kind of support do I get?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" data-i18n="faq-10-a">
+                    All plans include community support. Paid plans get priority email and WhatsApp support with
+                    faster response times.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="container" style="text-align: center;">
+        <div class="cta">
+            <h2 data-i18n="cta-title">Need a custom solution?</h2>
+            <p class="subtitle" style="margin-bottom: 32px;" data-i18n="cta-subtitle">
+                Let's discuss your specific requirements. Get a personalized quote and demo tailored to your
+                business
+                needs.
+            </p>
+            <button class="btn btn-primary" style="font-size: 18px; padding: 16px 48px;" onclick="scrollToCalculator()"
+                data-i18n="cta-button">
+                Request Custom Quote
+            </button>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp: Included in Layout or here? I'll put it here to be safe and match original -->
+    <a href="https://wa.me/6287853911945?text=Hello%20Aika%20Nexus%2C%20I%20have%20a%20question%20about..."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+</Layout>

@@ -1,0 +1,49 @@
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="https://aika.agency/wp-content/uploads/2025/12/logo-white.png"
+                alt="Aika Work Management Platform Logo">
+        </div>
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html#features" data-i18n="nav-features"
+                onclick="event.preventDefault(); window.smoothScroll('#features', 1500); window.closeMobileMenu();">Features</a>
+            <a href="index.html#pricing" data-i18n="nav-pricing"
+                onclick="event.preventDefault(); window.smoothScroll('#pricing', 1500); window.closeMobileMenu();">Pricing</a>
+
+            <div class="lang-dropdown">
+                <button class="lang-btn" onclick="toggleLangDropdown()" aria-label="Select language">
+                    <img src="https://ik.imagekit.io/qrnjdv9jd/Aika/flag/united-states.png?tr=w-60" class="flag-icon"
+                        id="currentFlag" alt="US Flag">
+                    <span style="font-size: 14px; font-weight: 500;">EN</span>
+                </button>
+                <div class="lang-menu" id="langMenu">
+                    <div class="lang-option" onclick="selectLanguage('en')">
+                        <img src="https://ik.imagekit.io/qrnjdv9jd/Aika/flag/united-states.png?tr=w-60"
+                            class="flag-icon" alt="US"> English
+                    </div>
+                    <div class="lang-option" onclick="selectLanguage('id')">
+                        <img src="https://ik.imagekit.io/qrnjdv9jd/Aika/flag/indonesia.png?tr=w-60" class="flag-icon"
+                            alt="ID"> Indonesia
+                    </div>
+                    <div class="lang-option" onclick="selectLanguage('ja')">
+                        <img src="https://ik.imagekit.io/qrnjdv9jd/Aika/flag/japan.png?updatedAt=1768408070438"
+                            class="flag-icon" alt="JP"> 日本語
+                    </div>
+                    <div class="lang-option" onclick="selectLanguage('zh-CN')">
+                        <img src="https://ik.imagekit.io/qrnjdv9jd/Aika/flag/china.png?tr=w-60" class="flag-icon"
+                            alt="CN"> 中文
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://nexus.aika.agency/login" class="btn btn-secondary" data-i18n="nav-login"
+                rel="noopener">Client Login</a>
+            <a href="https://nexus.aika.agency/signup" class="btn btn-primary" data-i18n="nav-try" rel="noopener">Try
+                Free</a>
+        </div>
+    </div>
+</nav>
+<div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="closeMobileMenu()"></div>
