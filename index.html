@@ -46,11 +46,10 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <!-- Preload critical CSS -->
-    <link rel="preload" href="assets/css/style.css?v=1.0.1" as="style">
+    <link rel="preload" href="assets/css/style.css?v=7" as="style">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=1.0.1">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +58,12 @@
         rel="stylesheet">
 
     <!-- Main Styles -->
-    <link rel="stylesheet" href="assets/css/style.css?v=3">
+    <link rel="stylesheet" href="assets/css/flux-design-tokens.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=8">
+    <link rel="stylesheet" href="assets/css/flux-components.css?v=1">
+    <link rel="stylesheet" href="assets/css/flux-components-pro.css">
+    <link rel="stylesheet" href="assets/css/hamburger-fix.css">
+    <link rel="stylesheet" href="assets/css/mobile-fix.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYC1YMQQ2H"></script>
@@ -199,20 +203,22 @@
                         Start free. Scale with CRM, payroll, or fully custom controls.
                     </p>
                     <div class="hero-buttons">
-                        <a href="https://nexus.aika.agency/signup" class="btn btn-primary" data-i18n="hero-cta-primary"
-                            rel="noopener">Start Free Trial</a>
-                        <a href="#pricing" class="btn btn-secondary" data-i18n="hero-cta-secondary"
+                        <a href="https://nexus.aika.agency/signup" class="flux-btn flux-btn-primary flux-btn-lg"
+                            data-i18n="hero-cta-primary" rel="noopener">Start Free Trial</a>
+                        <a href="#pricing" class="flux-btn flux-btn-secondary flux-btn-lg"
+                            data-i18n="hero-cta-secondary"
                             onclick="event.preventDefault(); window.smoothScroll('#pricing', 1500);">View Pricing</a>
                     </div>
-                    <div class="trust-badge">
-                        <div class="trust-item">
+                    <div class="trust-badge"
+                        style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px;">
+                        <span class="flux-badge flux-badge-success">
                             <i class="fa-solid fa-check"></i>
                             <span data-i18n="trust-1">No credit card required</span>
-                        </div>
-                        <div class="trust-item">
+                        </span>
+                        <span class="flux-badge flux-badge-success">
                             <i class="fa-solid fa-check"></i>
                             <span data-i18n="trust-2">14-day free trial</span>
-                        </div>
+                        </span>
                     </div>
                 </div>
 
@@ -247,7 +253,7 @@
 
         <!-- STATS -->
         <div id="content-start" class="container" style="padding-top: 120px;">
-            <div class="stats">
+            <div class="stats" data-reveal>
                 <div class="stat-item">
                     <div class="stat-number">500+</div>
                     <div class="stat-label" data-i18n="stat-1">Companies Trust Us</div>
@@ -277,36 +283,36 @@
             </p>
 
             <div class="grid">
-                <div class="card">
+                <div class="card" data-reveal>
                     <div class="icon"><i class="fa-solid fa-list-check"></i></div>
                     <h3 data-i18n="feature-1-title">Projects & Tasks</h3>
                     <p data-i18n="feature-1-desc">Plan work, track progress, and assign ownership with intuitive boards
                         and
                         timelines.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-reveal>
                     <div class="icon"><i class="fa-solid fa-users"></i></div>
                     <h3 data-i18n="feature-2-title">HR & Attendance</h3>
                     <p data-i18n="feature-2-desc">Employees, roles, leave management, and time tracking all in one
                         place.
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" data-reveal>
                     <div class="icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
                     <h3 data-i18n="feature-3-title">Finance</h3>
                     <p data-i18n="feature-3-desc">Invoices, payments, expenses, and contracts with full reporting.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-reveal>
                     <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
                     <h3 data-i18n="feature-4-title">CRM (Add-on)</h3>
                     <p data-i18n="feature-4-desc">Leads, clients, and sales pipelines when you need them.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-reveal>
                     <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
                     <h3 data-i18n="feature-5-title">Analytics</h3>
                     <p data-i18n="feature-5-desc">Real-time insights and custom reports to drive better decisions.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-reveal>
                     <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
                     <h3 data-i18n="feature-6-title">Security</h3>
                     <p data-i18n="feature-6-desc">Enterprise-grade security with role-based access control.</p>
@@ -318,8 +324,10 @@
         <section class="productivity-showcase">
             <div class="container">
                 <!-- Header -->
-                <div class="showcase-header">
-                    <span class="section-label">AIKA NEXUS HUB</span>
+                <div class="showcase-header" data-reveal>
+                    <span class="flux-badge flux-badge-primary"
+                        style="margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase;">Aika Nexus
+                        Hub</span>
                     <h2 class="powerhouse-title" data-i18n="powerhouse-title">Your productivity powerhouse</h2>
                     <p class="showcase-intro" data-i18n="powerhouse-intro">
                         Stay organized and efficient with Projects, HR, and Analytics. Every task, employee, or metric
@@ -368,7 +376,7 @@
         </section>
 
         <!-- TESTIMONIALS -->
-        <section class="container">
+        <section class="container" id="testimonials">
             <h2 data-i18n="testimonial-title">What our customers say</h2>
             <p class="subtitle" data-i18n="testimonial-subtitle">Trusted by growing businesses across Indonesia</p>
 
@@ -376,7 +384,7 @@
                 <div class="carousel-viewport">
                     <div id="testimonialTrack">
                         <!-- Testimonial 1 -->
-                        <div class="testimonial-card testimonial-slide">
+                        <div class="testimonial-card testimonial-slide flux-card">
                             <div class="stars">★★★★★</div>
                             <p class="testimonial-text" data-i18n="testimonial-1-text">
                                 "Aika has streamlined our project management completely. We went from multiple tools to
@@ -566,7 +574,7 @@
                         <li data-i18n="plan-free-3">5GB storage</li>
                         <li data-i18n="plan-free-4">Community support</li>
                     </ul>
-                    <a href="https://nexus.aika.agency/signup" class="btn btn-secondary"
+                    <a href="https://nexus.aika.agency/signup" class="flux-btn flux-btn-secondary"
                         style="width: 100%; margin-top: 16px;" data-i18n="plan-cta">Get Started</a>
                 </div>
 
@@ -581,12 +589,12 @@
                         <li data-i18n="plan-essential-3">Email support</li>
                         <li data-i18n="plan-essential-4">Advanced reporting</li>
                     </ul>
-                    <a href="https://nexus.aika.agency/signup" class="btn btn-primary"
+                    <a href="https://nexus.aika.agency/signup" class="flux-btn flux-btn-primary"
                         style="width: 100%; margin-top: 16px;" data-i18n="plan-cta">Get Started</a>
                 </div>
 
                 <div class="plan recommended">
-                    <span class="badge" data-i18n="badge-popular">Most Popular</span>
+                    <span class="flux-badge flux-badge-primary" data-i18n="badge-popular">Most Popular</span>
                     <h3 data-i18n="plan-business-name">Business</h3>
                     <p class="price" id="businessPrice">Rp 1.749.000 <span
                             style="font-size: 16px; color: var(--muted);">/
@@ -598,7 +606,7 @@
                         <li data-i18n="plan-business-4">Custom integrations</li>
                         <li data-i18n="plan-business-5">API access</li>
                     </ul>
-                    <a href="https://nexus.aika.agency/signup" class="btn btn-primary"
+                    <a href="https://nexus.aika.agency/signup" class="flux-btn flux-btn-primary"
                         style="width: 100%; margin-top: 16px;" data-i18n="plan-cta">Get Started</a>
                 </div>
 
@@ -612,7 +620,7 @@
                         <li data-i18n="plan-custom-4">Custom features</li>
                         <li data-i18n="plan-custom-5">SLA guarantee</li>
                     </ul>
-                    <button class="btn btn-secondary" style="width: 100%; margin-top: 16px;"
+                    <button class="flux-btn flux-btn-secondary" style="width: 100%; margin-top: 16px;"
                         onclick="scrollToCalculator()" data-i18n="plan-contact">Contact Sales</button>
                 </div>
             </div>
@@ -742,8 +750,8 @@
                             </select>
                         </div>
 
-                        <button class="btn btn-primary" style="width: 100%; margin-top: 24px;" onclick="calculateCost()"
-                            data-i18n="calc-button">
+                        <button class="flux-btn flux-btn-primary flux-btn-lg" style="width: 100%; margin-top: 24px;"
+                            onclick="calculateCost()" data-i18n="calc-button">
                             Calculate & Request Quote
                         </button>
                         <div class="result" id="calcResult"></div>
@@ -777,12 +785,12 @@
 
         <!-- FAQ -->
 
-        <section class="container">
+        <section class="container" id="faq">
             <h2 data-i18n="faq-title">Frequently Asked Questions</h2>
             <p class="subtitle" data-i18n="faq-subtitle">Everything you need to know about Aika</p>
 
             <div style="max-width: 800px; margin: 48px auto;">
-                <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-item flux-card" onclick="toggleFAQ(this)">
                     <div class="faq-question">
                         <span data-i18n="faq-1-q">How does the free trial work?</span>
                         <span class="faq-toggle">+</span>
@@ -793,7 +801,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-item flux-card" onclick="toggleFAQ(this)">
                     <div class="faq-question">
                         <span data-i18n="faq-2-q">Can I change plans later?</span>
                         <span class="faq-toggle">+</span>
@@ -803,7 +811,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-item flux-card" onclick="toggleFAQ(this)">
                     <div class="faq-question">
                         <span data-i18n="faq-3-q">What payment methods do you accept?</span>
                         <span class="faq-toggle">+</span>
@@ -814,7 +822,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-item flux-card" onclick="toggleFAQ(this)">
                     <div class="faq-question">
                         <span data-i18n="faq-4-q">Is my data secure?</span>
                         <span class="faq-toggle">+</span>
@@ -825,7 +833,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-item flux-card" onclick="toggleFAQ(this)">
                     <div class="faq-question">
                         <span data-i18n="faq-5-q">Do you offer training and support?</span>
                         <span class="faq-toggle">+</span>
@@ -836,7 +844,7 @@
                         plan.
                     </div>
                 </div>
-                <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-item flux-card" onclick="toggleFAQ(this)">
                     <div class="faq-question">
                         <span data-i18n="faq-6-q">Where is my data hosted?</span>
                         <span class="faq-toggle">+</span>
@@ -847,7 +855,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-item flux-card" onclick="toggleFAQ(this)">
                     <div class="faq-question">
                         <span data-i18n="faq-7-q">Do you support integrations?</span>
                         <span class="faq-toggle">+</span>
@@ -858,7 +866,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-item flux-card" onclick="toggleFAQ(this)">
                     <div class="faq-question">
                         <span data-i18n="faq-8-q">Is there a mobile app?</span>
                         <span class="faq-toggle">+</span>
@@ -869,7 +877,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-item flux-card" onclick="toggleFAQ(this)">
                     <div class="faq-question">
                         <span data-i18n="faq-9-q">Can I customize the platform with my branding?</span>
                         <span class="faq-toggle">+</span>
@@ -927,7 +935,9 @@
     <script src="assets/locales/zh-CN.js" defer></script>
     <script src="assets/locales/ja.js" defer></script>
 
-    <script src="assets/js/main.js?v=2" defer></script>
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js?v=10" defer></script>
+    <script src="assets/js/flux-components.js" defer></script>
 </body>
 
 </html>

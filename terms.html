@@ -32,7 +32,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/flux-design-tokens.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=5">
+    <link rel="stylesheet" href="assets/css/flux-components.css?v=1">
+    <link rel="stylesheet" href="assets/css/flux-components-pro.css">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYC1YMQQ2H"></script>
@@ -48,12 +51,18 @@
     <div id="header-container"></div>
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
 
-    <div class="legal-content">
-        <h1 data-i18n="terms-title">Terms of Service</h1>
-        <p class="last-updated"><span data-i18n="legal-last-updated">Last updated:</span> January 12, 2026</p>
+    <div class="legal-content" style="max-width: 900px; margin: 0 auto; padding: 80px 24px;">
+        <div style="text-align: center; margin-bottom: 48px;" data-reveal>
+            <span class="flux-badge flux-badge-warning flux-badge-lg">Legal Agreement</span>
+            <h1 data-i18n="terms-title" style="font-size: 48px; margin-bottom: 16px;">Terms of Service</h1>
+            <p class="last-updated" style="color: var(--muted); font-size: 16px;"><span
+                    data-i18n="legal-last-updated">Last updated:</span> January 12, 2026</p>
+        </div>
 
-        <div class="legal-section">
-            <h2 data-i18n="terms-h1">Reuse</h2>
+
+        <div class="legal-section" data-reveal
+            style="background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 32px; margin-bottom: 24px;">
+            <h2 data-i18n="terms-h1" style="color: var(--primary); margin-bottom: 16px;">Reuse</h2>
             <p>This document is an adaptation of the Heroku Terms of Service, which is an adaptation of the Google App
                 Engine Terms of Service. The original work has been modified under the Creative Commons Attribution 3.0
                 License. Neither Heroku, Inc. nor Google, Inc. is connected with and does not sponsor or endorse Aika
@@ -289,7 +298,9 @@
     <script src="assets/locales/zh-CN.js" defer></script>
     <script src="assets/locales/ja.js" defer></script>
 
+    <script src="assets/js/i18n.js" defer></script>
     <script src="assets/js/main.js?v=2" defer></script>
+    <script src="assets/js/flux-components.js" defer></script>
 </body>
 
 </html>

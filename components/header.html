@@ -1,20 +1,25 @@
 <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-        <div class="logo">
+        <a href="index.html" class="logo" style="cursor: pointer; text-decoration: none;">
             <img src="https://aika.agency/wp-content/uploads/2025/12/logo-white.png"
                 alt="Aika Work Management Platform Logo">
-        </div>
+        </a>
         <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
         <div class="nav-links" id="navLinks">
-            <a href="index.html#features" data-i18n="nav-features"
+            <a href="index.html#features" class="flux-btn flux-btn-ghost flux-btn-sm" data-i18n="nav-features"
                 onclick="event.preventDefault(); window.smoothScroll('#features', 1500); window.closeMobileMenu();">Features</a>
-            <a href="index.html#pricing" data-i18n="nav-pricing"
+            <a href="index.html#testimonials" class="flux-btn flux-btn-ghost flux-btn-sm" data-i18n="nav-testimonials"
+                onclick="event.preventDefault(); window.smoothScroll('#testimonials', 1500); window.closeMobileMenu();">Testimonials</a>
+            <a href="index.html#pricing" class="flux-btn flux-btn-ghost flux-btn-sm" data-i18n="nav-pricing"
                 onclick="event.preventDefault(); window.smoothScroll('#pricing', 1500); window.closeMobileMenu();">Pricing</a>
+            <a href="index.html#faq" class="flux-btn flux-btn-ghost flux-btn-sm" data-i18n="nav-faq"
+                onclick="event.preventDefault(); window.smoothScroll('#faq', 1500); window.closeMobileMenu();">FAQ</a>
 
             <div class="lang-dropdown">
-                <button class="lang-btn" onclick="toggleLangDropdown()" aria-label="Select language">
+                <button class="lang-btn" onclick="toggleLangDropdown()" aria-label="Select language"
+                    style="position: relative;">
                     <img src="https://ik.imagekit.io/qrnjdv9jd/Aika/flag/united-states.png?tr=w-60" class="flag-icon"
                         id="currentFlag" alt="US Flag">
                     <span style="font-size: 14px; font-weight: 500;">EN</span>
@@ -39,10 +44,10 @@
                 </div>
             </div>
 
-            <a href="https://nexus.aika.agency/login" class="btn btn-secondary" data-i18n="nav-login"
+            <a href="https://nexus.aika.agency/login" class="flux-btn flux-btn-ghost flux-btn-sm" data-i18n="nav-login"
                 rel="noopener">Client Login</a>
-            <a href="https://nexus.aika.agency/signup" class="btn btn-primary" data-i18n="nav-try" rel="noopener">Try
-                Free</a>
+            <a href="https://nexus.aika.agency/signup" class="flux-btn flux-btn-primary flux-btn-sm" data-i18n="nav-try"
+                rel="noopener">Try Free</a>
         </div>
     </div>
 </nav>

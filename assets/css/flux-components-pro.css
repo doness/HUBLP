@@ -1,0 +1,490 @@
+/**
+ * FLUXPRO ADVANCED COMPONENTS
+ * Professional component library based on FluxPro design patterns
+ */
+
+/* ============================================
+   BUTTONS - FluxPro Style
+   ============================================ */
+.flux-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-family: var(--font-sans);
+    font-weight: var(--font-medium);
+    font-size: var(--text-sm);
+    line-height: 1;
+    height: var(--button-height);
+    padding: 0 var(--space-4);
+    border-radius: var(--radius-lg);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--transition);
+    text-decoration: none;
+    white-space: nowrap;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.flux-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Primary Button */
+.flux-btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.flux-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-primary-lg);
+    background: linear-gradient(135deg, var(--primary-hover), var(--accent-hover));
+}
+
+.flux-btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Secondary Button */
+.flux-btn-secondary {
+    background: var(--surface);
+    color: var(--text-primary);
+    border-color: var(--border-primary);
+}
+
+.flux-btn-secondary:hover {
+    background: var(--surface-hover);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* Ghost Button */
+.flux-btn-ghost {
+    background: transparent;
+    color: var(--text-secondary);
+}
+
+.flux-btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+/* Subtle Button */
+.flux-btn-subtle {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-secondary);
+    border-color: transparent;
+}
+
+.flux-btn-subtle:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+}
+
+/* Danger Button */
+.flux-btn-danger {
+    background: var(--danger);
+    color: white;
+}
+
+.flux-btn-danger:hover {
+    background: #dc2626;
+    box-shadow: var(--shadow-danger);
+}
+
+/* Success Button */
+.flux-btn-success {
+    background: var(--success);
+    color: white;
+}
+
+.flux-btn-success:hover {
+    background: var(--emerald-600);
+    box-shadow: var(--shadow-success);
+}
+
+/* Button Sizes */
+.flux-btn-xs {
+    height: var(--button-height-xs);
+    padding: 0 var(--space-2);
+    font-size: var(--text-xs);
+}
+
+.flux-btn-sm {
+    height: var(--button-height-sm);
+    padding: 0 var(--space-3);
+    font-size: var(--text-sm);
+}
+
+.flux-btn-lg {
+    height: var(--button-height-lg);
+    padding: 0 var(--space-6);
+    font-size: var(--text-base);
+}
+
+/* ============================================
+   CARDS - FluxPro Style
+   ============================================ */
+.flux-card {
+    background: var(--surface);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-2xl);
+    padding: var(--card-padding);
+    transition: all var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.flux-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.flux-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-xl);
+    background: var(--surface-hover);
+}
+
+.flux-card:hover::before {
+    opacity: 1;
+}
+
+.flux-card-lg {
+    padding: var(--card-padding-lg);
+}
+
+.flux-card-glass {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border-color: var(--glass-border);
+}
+
+/* ============================================
+   INPUTS - FluxPro Style
+   ============================================ */
+.flux-input {
+    width: 100%;
+    height: var(--input-height);
+    padding: 0 var(--space-3);
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    color: var(--text-primary);
+    background: var(--surface);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition);
+    outline: none;
+}
+
+.flux-input::placeholder {
+    color: var(--text-muted);
+}
+
+.flux-input:hover {
+    border-color: var(--border-hover);
+}
+
+.flux-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+    background: var(--surface-hover);
+}
+
+.flux-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: var(--surface);
+}
+
+.flux-input-sm {
+    height: var(--input-height-sm);
+    font-size: var(--text-xs);
+}
+
+.flux-input-lg {
+    height: var(--input-height-lg);
+    font-size: var(--text-base);
+}
+
+/* ============================================
+   BADGES - FluxPro Style
+   ============================================ */
+.flux-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-1) var(--space-2-5);
+    font-size: var(--text-xs);
+    font-weight: var(--font-medium);
+    line-height: 1;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+}
+
+.flux-badge-primary {
+    background: var(--primary-light);
+    color: var(--primary);
+    border: 1px solid rgba(79, 124, 255, 0.2);
+}
+
+.flux-badge-success {
+    background: var(--success-light);
+    color: var(--success);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.flux-badge-warning {
+    background: var(--warning-light);
+    color: var(--warning);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.flux-badge-danger {
+    background: var(--danger-light);
+    color: var(--danger);
+    border: 1px solid rgba(244, 63, 94, 0.2);
+}
+
+.flux-badge-info {
+    background: var(--info-light);
+    color: var(--info);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.flux-badge-lg {
+    padding: var(--space-1-5) var(--space-4);
+    font-size: var(--text-sm);
+}
+
+/* ============================================
+   MODALS - FluxPro Style
+   ============================================ */
+.flux-modal {
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+}
+
+.flux-modal.show {
+    display: flex;
+}
+
+.flux-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: var(--overlay-dark);
+    backdrop-filter: blur(4px);
+}
+
+.flux-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-2xl);
+    padding: var(--space-8);
+    overflow-y: auto;
+    animation: modalFadeIn var(--transition-slow) var(--ease-out);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* ============================================
+   ALERTS - FluxPro Style
+   ============================================ */
+.flux-alert {
+    display: flex;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border-radius: var(--radius-xl);
+    border: 1px solid;
+    background: var(--surface);
+}
+
+.flux-alert-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.flux-alert-content {
+    flex: 1;
+}
+
+.flux-alert-title {
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-1);
+}
+
+.flux-alert-info {
+    border-color: var(--info);
+    background: var(--info-light);
+    color: var(--info);
+}
+
+.flux-alert-success {
+    border-color: var(--success);
+    background: var(--success-light);
+    color: var(--success);
+}
+
+.flux-alert-warning {
+    border-color: var(--warning);
+    background: var(--warning-light);
+    color: var(--warning);
+}
+
+.flux-alert-danger {
+    border-color: var(--danger);
+    background: var(--danger-light);
+    color: var(--danger);
+}
+
+/* ============================================
+   PROGRESS BARS - FluxPro Style
+   ============================================ */
+.flux-progress {
+    width: 100%;
+    height: 8px;
+    background: var(--surface);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.flux-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: var(--radius-full);
+    transition: width var(--transition-slow);
+}
+
+.flux-progress-success .flux-progress-bar {
+    background: var(--success);
+}
+
+.flux-progress-warning .flux-progress-bar {
+    background: var(--warning);
+}
+
+.flux-progress-danger .flux-progress-bar {
+    background: var(--danger);
+}
+
+/* ============================================
+   DIVIDERS - FluxPro Style
+   ============================================ */
+.flux-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-primary), transparent);
+    margin: var(--space-8) 0;
+}
+
+.flux-divider-text {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin: var(--space-8) 0;
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+}
+
+.flux-divider-text::before,
+.flux-divider-text::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-primary), transparent);
+}
+
+/* ============================================
+   LOADING STATES - FluxPro Style
+   ============================================ */
+.flux-spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid var(--border-primary);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.flux-skeleton {
+    background: linear-gradient(90deg,
+            var(--surface) 0%,
+            var(--surface-hover) 50%,
+            var(--surface) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: var(--radius);
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ============================================
+   TOOLTIPS - FluxPro Style
+   ============================================ */
+.flux-tooltip {
+    position: absolute;
+    z-index: var(--z-tooltip);
+    padding: var(--space-2) var(--space-3);
+    background: var(--zinc-900);
+    color: white;
+    font-size: var(--text-xs);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.flux-tooltip.show {
+    opacity: 1;
+}
